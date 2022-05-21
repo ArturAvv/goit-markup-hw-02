@@ -110,6 +110,7 @@ address {
   letter-spacing: 0.06em;
   color: var(--white-text-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .hero-btn:hover,
@@ -220,6 +221,7 @@ address {
   line-height: 1.62;
   text-align: center;
   color: var(--main-text-color);
+  cursor: pointer;
 }
 
 .portf-btn:hover,
