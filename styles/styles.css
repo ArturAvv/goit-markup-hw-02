@@ -3,11 +3,18 @@
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
   --white-text-color: #ffffff;
-
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --section-grey-color: #f5f4fa;
+  --footer-color: #2f303a;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  background-color: var(--white-color);
+  color: var(--main-text-color);
 }
 
 .header-logo,
@@ -32,9 +39,25 @@ address {
   font-style: normal;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* --------------------------------header------------------------------- */
 
 .header-link {
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
 
@@ -48,18 +71,22 @@ address {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--black-color);
 }
 
 .logo-web {
   color: var(--accent-color);
 }
 
+.mail,
+.tel {
+  color: var(--secondary-text-color);
+}
+
 /* --------------------------------hero------------------------------- */
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--footer-color);
 }
 
 .hero-title {
@@ -82,40 +109,24 @@ address {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  color: #000000;
+  color: var(--black-color);
 }
 
 /* --------------------------------excell------------------------------- */
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 .excell-sub-title {
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-text-color);
 }
 
 .excell-text {
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -128,29 +139,27 @@ address {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
 }
 
 .about-list {
-    display: flex;
+  display: flex;
 }
 .about-imgs {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 /* --------------------------------team------------------------------- */
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--section-grey-color);
 }
 
 .team-list {
   display: flex;
 }
 
-.team-card{
-background-color: #ffffff;
-margin-left: 30px;
+.team-card {
+  background-color: var(--white-color);
+  margin-left: 30px;
 }
 
 .team-title {
@@ -158,8 +167,6 @@ margin-left: 30px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
 }
 
 .team-name {
@@ -167,22 +174,19 @@ margin-left: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
 }
 
 .team-prof {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
 /* --------------------------------footer------------------------------- */
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-color);
 }
 
 .footer-logo {
@@ -190,21 +194,16 @@ margin-left: 30px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .location {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--white-text-color);
 }
 
 .footer-link {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -220,13 +219,12 @@ margin-left: 30px;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
 .portf-btn:hover,
 .portf-btn:focus {
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 
@@ -235,22 +233,20 @@ margin-left: 30px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--main-text-color);
 }
 
 .projects-type {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
 .projects-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 34px 215px 94px 215px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 34px 215px 94px 215px;
 }
 
 .projects-item {
-    margin-left: 30px;
+  margin-left: 30px;
 }
